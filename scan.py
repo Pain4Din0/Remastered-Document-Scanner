@@ -1,5 +1,5 @@
 # USAGE
-# python scan.py --image images/doc_01.jpg
+# python scan.py --image images/01.jpg
 
 # import the necessary packages
 from skimage.filters import threshold_local
