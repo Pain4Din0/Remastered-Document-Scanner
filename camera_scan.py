@@ -92,9 +92,9 @@ not_blurry_frames = []
 # Loop over the frames from the video stream
 while True:
     # Grab the frame from the threaded video stream and resize it
-    # to have a maximum width of 500 pixels
+    # to have a maximum width of 800 pixels
     frame = vs.read()
-    frame = imutils.resize(frame, width=500)
+    frame = imutils.resize(frame, width=800)
 
     # Convert the frame to grayscale and detect blur in it
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
