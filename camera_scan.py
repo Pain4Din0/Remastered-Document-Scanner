@@ -51,7 +51,8 @@ def perform_scanning(frame):
     # Display the original and scanned images
     cv2.imshow("Original", frame)
     cv2.imshow("Scanned", warped)
-    cv2.waitKey(0)
+    cv2.waitKey(2000)
+    cv2.destroyAllWindows()
 
 # Function to order points for four point transform
 def order_points(pts):
@@ -110,7 +111,7 @@ while True:
             not_blurry_frames.append(frame)
 
             # Perform scanning on the first frame in the list
-            perform_scanning(not_blurry_frames[0])
+            perform_scanning(not_blurry_frames[len(not_blurry_frames)//2])
 
             # Reset variables
             start_time = None
